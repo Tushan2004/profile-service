@@ -11,6 +11,5 @@ import java.util.List;
 public interface PractitionerRepository extends JpaRepository<Practitioner, Long> {
     
     @Override
-    @EntityGraph(attributePaths = {"user"})
     List<Practitioner> findAll();
 }
